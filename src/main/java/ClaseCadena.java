@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ClaseCadena {
     public static String DevuelveIniciales(String nombreCompleto){
         String iniciales = "";
@@ -14,6 +16,10 @@ public class ClaseCadena {
     }
 
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce tu nombre completo: ");
+        String nombreCompleto = sc.nextLine();
+        System.out.println("Tus iniciales son: " + DevuelveIniciales(nombreCompleto));
 
     }
         }
